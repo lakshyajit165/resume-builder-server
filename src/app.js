@@ -7,6 +7,10 @@ const pdf = require('html-pdf');
 const pdfTemplate = require('./templates');
 const fs = require('fs');
 
+app.get("/check", (req, res) => {
+    return res.status(200).send({ "message": "Server is up and running!" });
+});
+
 app.post("/create_resume", (req, res) => {
     console.log(req.body);
     pdf.create(pdfTemplate(req.body), {}).toStream((err, stream) => {
