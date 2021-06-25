@@ -53,7 +53,7 @@ module.exports = ({
         <div class="container p-3 mx-auto">
             <div class="col-lg-4 mr-auto">
                 <h1 class="header-name">${name}</h1>
-                <p><span><strong>Email:</strong> </span>${email}, <span><strong>Contact:</strong> </span>(+91)${mobile}, <span><strong>Github:</strong> </span>${github}, <span><strong>LinkedIn:</strong> </span>${linkedin}</p>
+                <p><span><strong>Email:</strong> </span>${email}, <span><strong>Contact:</strong> </span>${mobile}, <span><strong>Github:</strong> </span>${github}, <span><strong>LinkedIn:</strong> </span>${linkedin}</p>
             </div>
             
             <div class="resume-body">
