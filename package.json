@@ -1,20 +1,22 @@
 {
-  "name": "resume-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "html-pdf": "^3.0.1",
-    "moment": "^2.29.1",
-    "nodemon": "^2.0.7"
-  }
+	"name": "resume-server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node src/app.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"moment": "^2.29.1",
+		"puppeteer": "^18.0.4"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	}
 }
