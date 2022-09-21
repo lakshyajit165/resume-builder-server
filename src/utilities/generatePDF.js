@@ -7,6 +7,17 @@ const getPage = async () => {
 	if (page) return page;
 
 	const browser = await puppeteer.launch({
+		// source: https://stackoverflow.com/questions/49008008/chrome-headless-puppeteer-too-much-cpu
+		args: [
+			"--no-sandbox",
+			"--disable-setuid-sandbox",
+			"--disable-dev-shm-usage",
+			"--disable-accelerated-2d-canvas",
+			"--no-first-run",
+			"--no-zygote",
+			"--single-process", // <- this one doesn't works in Windows
+			"--disable-gpu",
+		],
 		headless: true,
 	});
 
