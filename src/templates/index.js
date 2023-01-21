@@ -82,24 +82,7 @@ module.exports = ({
 							.join("")}
                     </ul>
                 </p>
-    
-                <h3 class="section-name">Projects</h3>
-                <hr/>
-                <p class="project-section"> 
-                    <ul>
-                        ${projects
-							.map(
-								(prj) =>
-									`<li><strong>${prj.title}</strong>: ${prj.description} ${
-										prj.link
-											? `<strong> Project Link - ${prj.link}</strong>`
-											: ""
-									}</li>`
-							)
-							.join("")}
-                    </ul>
-                </p>
-    
+                
                 <h3 class="section-name">Experience</h3>
                 <hr/>
                 <p class="exp-section"> 
@@ -112,6 +95,23 @@ module.exports = ({
 									}, ${getFormattedDate(ex.from)} - ${
 										ex.current_job ? "Present" : `${getFormattedDate(ex.to)}`
 									}) ${ex.description}</li>`
+							)
+							.join("")}
+                    </ul>
+                </p>
+                
+                <h3 class="section-name">Projects</h3>
+                <hr/>
+                <p class="project-section"> 
+                    <ul>
+                        ${projects
+							.map(
+								(prj) =>
+									`<li><strong>${prj.title}</strong>: ${prj.description} ${
+										prj.link
+											? `<strong> Project Link - ${prj.link}</strong>`
+											: ""
+									}</li>`
 							)
 							.join("")}
                     </ul>
